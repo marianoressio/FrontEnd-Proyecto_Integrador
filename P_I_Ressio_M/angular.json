@@ -25,9 +25,12 @@
               "src/assets"
             ],
             "styles": [
+              "D:/Nueva carpeta (2)/Mariano/Curso Programacion/FrontEnd-Proyecto_Integrador/P_I_Ressio_M/node_modules/bootstrap/dist/css/bootstrap.css"
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "D:/Nueva carpeta (2)/Mariano/Curso Programacion/FrontEnd-Proyecto_Integrador/P_I_Ressio_M/node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {
