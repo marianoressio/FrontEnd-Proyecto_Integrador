@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { persona } from 'src/app/model/persona.model';
+import { ImageService } from 'src/app/service/image.service';
 import { PersonaService } from 'src/app/service/persona.service';
 
 @Component({
@@ -11,7 +12,7 @@ import { PersonaService } from 'src/app/service/persona.service';
 export class EditAcercaDeComponent {
   persona: persona= null;
 
-  constructor(private activatedRouter: ActivatedRoute, private personaService: PersonaService, private router: Router){
+  constructor(private activatedRouter: ActivatedRoute, private personaService: PersonaService, private router: Router, public imageService: ImageService){
 
   }
 
@@ -42,6 +43,7 @@ export class EditAcercaDeComponent {
   }
 
   uploadImage($event:any){
+    this.imageService.uploadImage($event)
 
   }
 }
